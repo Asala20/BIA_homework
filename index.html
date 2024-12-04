@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knapsack Problem</title>
+     <link rel="stylesheet" href="assest/style.css">
+</head>
+<body>
+    <h1>Knapsack Problem</h1>
+
+    <!-- Form for data input -->
+    <form id="storage-form">
+        <div class="form-group">
+            <label for="capacity">Storage Capacity:</label>
+            <input type="number" id="capacity" required>
+        </div>
+
+        <div id="items-container">
+            <div class="item">
+                <label>Name: <input type="text" class="item-name" required></label>
+                <label>Weight: <input type="number" class="item-weight" required></label>
+                <label>Value: <input type="number" class="item-value" required></label>
+            </div>
+        </div>
+
+        <button type="button" id="add-item">Add Item</button>
+        <button type="submit" id="submit-button">Organize Storage</button>
+    </form>
+
+    <h2>Results</h2>
+    <div id="results"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
